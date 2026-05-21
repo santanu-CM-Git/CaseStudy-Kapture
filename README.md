@@ -1,61 +1,90 @@
 # Kapture Case Study
 
-## Project Overview
+## Project Name:
+Kapture
 
+## Project Overview:
 Kapture is an on-demand service platform designed to connect customers with representatives through a location-based booking experience. The platform enables users to discover nearby representatives, initiate bookings, communicate in real time, and manage service sessions seamlessly.
 
-The application supports dual-role functionality where users can switch between **Customer** and **Representative** roles within the same account. Customers can discover and book representatives based on preferences, while representatives can manage incoming requests, navigate to customer locations, and deliver services efficiently.
+The application supports dual-role functionality where users can switch between Customer and Representative roles within the same account.
+
+The ecosystem consists of:
+
+- **Customer App Experience** – Enables users to discover representatives, create bookings, make payments, and manage sessions.
+- **Representative App Experience** – Enables representatives to manage incoming requests, navigate to customer locations, communicate, and manage service activity.
 
 By combining real-time booking systems, map-based discovery, in-app communication, and secure transactions, Kapture creates a streamlined experience for both customers and service representatives.
 
----
+## Client:
+Confidential
 
-## Our Approach
+## Problem:
 
-### Dual Role-Based Experience
+The client needed an on-demand service ecosystem that could solve several operational challenges:
 
-- Designed a unified account system allowing users to switch between Customer and Representative roles.
-- Reduced friction by eliminating the need for multiple accounts.
+- Difficulty connecting customers with nearby service representatives
+- Requirement for real-time booking and request handling
+- Need for role-switching without maintaining multiple accounts
+- Lack of efficient communication during service sessions
+- Managing media uploads and service deliverables
+- Need for secure authentication and payment workflows
+- Requirement for scalable infrastructure supporting increasing users
 
-### Real-Time Booking Management
+## Technology I Use:
 
-- Built a real-time booking workflow for immediate request handling.
-- Enabled instant updates between customers and representatives.
+### Frontend
+- React Native
+- Redux / Context API
 
-### Location-Based Service Discovery
+### Backend
+- Supabase
+- REST APIs
 
-- Integrated maps for representative discovery based on user location.
-- Allowed users to manually enter addresses or use current location detection.
+### Authentication
+- Email & Password
+- Google Sign-In
+- Apple Sign-In
 
-### Seamless Communication
+### Real-Time Services
+- Supabase Realtime
+- In-App Chat
 
-- Implemented in-app chat functionality for real-time communication during sessions.
-- Improved engagement and coordination between users.
+### Maps & Navigation
+- Google Maps API
+- Turn-by-Turn Navigation
 
-### Scalable & Secure Infrastructure
+### Storage
+- Supabase Storage / AWS S3
 
-- Built scalable architecture supporting real-time operations and growing users.
-- Focused on secure authentication and data management.
+### Notifications
+- Firebase Cloud Messaging (FCM)
 
----
+### Payments
+- Stripe / Payment Gateway Integration
 
-## Key Features
+### Analytics
+- Firebase Analytics
+
+## Solution:
+
+Designed and developed a complete dual-role service ecosystem supporting both customers and representatives under a unified platform.
 
 ### Multi-Authentication Support
 
-Implemented secure login methods:
+Implemented secure authentication methods:
 
 - Email & Password authentication
 - Google Login
 - Apple Login
 - Secure registration and session management
 
-### Role Switching
+### Role Switching System
 
 Users can:
 
 - Switch between Customer and Representative roles
 - Manage both experiences under one account
+- Access different workflows seamlessly
 
 ### Customer Experience
 
@@ -67,11 +96,11 @@ Customers can:
   - Visual
   - Ghost
   - Both
-- Add goals and notes for sessions
+- Add goals and session notes
 - Select arrival preferences:
   - ASAP
   - 30 Minutes
-- Make payments securely
+- Make secure payments
 - Manage sessions:
   - Upcoming
   - Completed
@@ -84,13 +113,13 @@ Representatives can:
 - View incoming requests
 - Accept bookings
 - Navigate to customer locations
-- Communicate through chat
+- Communicate through in-app chat
 - Upload photos and videos after sessions
-- Manage profile details
+- Manage profiles and activities
 
 ### Dashboard & Performance Tracking
 
-Representatives can track:
+Representatives can monitor:
 
 - Average ratings
 - Total completed sessions
@@ -101,11 +130,12 @@ Representatives can track:
 
 ### Real-Time Booking System
 
-Features include:
+Implemented:
 
 - Instant booking requests
-- Real-time booking updates
-- Live request acceptance
+- Live booking updates
+- Real-time request acceptance
+- Session activity tracking
 
 ### Media Upload Functionality
 
@@ -121,138 +151,39 @@ Users can:
 
 - Rate completed sessions
 - Submit feedback
-- View reviews
+- View reviews and ratings
 
----
+### Analytics Tracking
 
-## Our Challenges
+Implemented Firebase Analytics for:
 
-### Real-Time Synchronization
-
-Ensuring booking requests, acceptance, and chat functionality remain synchronized without delays.
-
-### Map & Navigation Integration
-
-Implementing accurate location tracking and turn-by-turn navigation while maintaining performance.
-
-### Dual Role Management
-
-Managing Customer and Representative workflows within a single account structure.
-
-### Media Handling
-
-Handling secure upload and storage of photos and videos without affecting application performance.
-
-### Payment Integration
-
-Ensuring smooth and secure payment processing across booking workflows.
-
----
-
-## Technology Stack
-
-### Frontend
-
-- React Native
-- Redux / Context API
-
-### Backend
-
-- Supabase
-- REST APIs
-
-### Authentication
-
-- Email & Password
-- Google Sign-In
-- Apple Sign-In
-
-### Real-Time Services
-
-- Supabase Realtime
-- In-App Chat
-
-### Maps & Navigation
-
-- Google Maps API
-- Turn-by-Turn Navigation
-
-### Storage
-
-- Supabase Storage / AWS S3
-
-### Notifications
-
-- Firebase Cloud Messaging (FCM)
-
-### Payments
-
-- Stripe / Payment Gateway Integration
-
-### Analytics
-
-- Firebase Analytics
-
----
-
-## Analytics Implementation
-
-To optimize platform performance and understand user behavior, analytics tracking was implemented.
-
-Tracked events include:
-
-### Customer Activity
-
+#### Customer Activity
 - Registration completed
 - Representative viewed
 - Booking initiated
 - Session booked
 - Payment completed
 
-### Representative Activity
-
+#### Representative Activity
 - Booking accepted
 - Session completed
 - Media uploaded
 - Earnings viewed
 
-### Session Activity
-
+#### Session Activity
 - Chat initiated
 - Session started
 - Session completed
 - Review submitted
 
-These insights helped improve booking workflows and user engagement.
+These insights helped optimize booking workflows and improve user engagement.
 
----
+## Result:
 
-## Impact
-
-### Improved Service Accessibility
-
-Enabled customers to quickly connect with nearby representatives.
-
-### Increased User Engagement
-
-Real-time communication and simplified workflows increased user interaction.
-
-### Better Representative Productivity
-
-Dashboards and booking tools improved service management.
-
-### Seamless Booking Experience
-
-Integrated maps, communication tools, and payments into a unified workflow.
-
-### Scalable Platform Growth
-
-Built infrastructure capable of supporting increasing users and service requests.
-
----
-
-## Conclusion
-
-Kapture transforms on-demand service experiences through intelligent booking workflows, location-based discovery, real-time communication, and dual-role functionality.
-
-By combining scalable technology, secure authentication, and interactive user experiences, Kapture delivers a reliable platform that simplifies service management for both customers and representatives.
+- Improved accessibility by enabling customers to connect with nearby representatives instantly
+- Increased user engagement through real-time communication features
+- Simplified booking workflows with integrated maps and navigation
+- Improved representative productivity through dashboards and activity management tools
+- Delivered secure and seamless payment experiences
+- Successfully supported scalable growth for users and service requests
+- Created a unified ecosystem for both customers and representatives
