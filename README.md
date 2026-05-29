@@ -54,7 +54,7 @@ The client needed an on-demand service ecosystem that could solve several operat
 - Turn-by-Turn Navigation
 
 ### Storage
-- Supabase Storage / AWS S3
+- Supabase Storage
 
 ### Notifications
 - Firebase Cloud Messaging (FCM)
